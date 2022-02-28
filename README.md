@@ -1,14 +1,14 @@
-# Skeleton-Based Human Activity Discovery Technique Using Particle Swarm Optimization with Gaussian Mutation
+# Human Activity Discovery with Automatic Multi-Objective Particle Swarm Optimization Clustering with Gaussian Mutation and Game Theory
 
 Please cite our paper when you use this code in your research.
 ```
-@misc{hadikhani2022novel,
-      title={A Novel Skeleton-Based Human Activity Discovery Technique Using Particle Swarm Optimization with Gaussian Mutation}, 
+@misc{...,
+      title={Human Activity Discovery with Automatic Multi-Objective Particle Swarm Optimization Clustering with Gaussian Mutation and Game Theory}}, 
       author={Parham Hadikhani and Daphne Teck Ching Lai and Wee-Hong Ong},
       year={2022},
-      eprint={2201.05314},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      eprint={...},
+      archivePrefix={..},
+      primaryClass={...}
 }
 ```
 ## Introduction
