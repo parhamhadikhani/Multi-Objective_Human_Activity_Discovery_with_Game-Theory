@@ -16,6 +16,7 @@ This repository contains the implementation of our proposed method for [human ac
 
 ![arch](/figures/conceptual overview2.jpg)
 
+
 The workflow of the proposed method is as follows. In stage 1, keyframes and joints are and selected from input frames. In stage 2, features are extracted and normalized. Important features are selected b PCA and frames are segmented into the fix sized time overlapping windows. The HAD stage is executed for different values of k in the range of kmin to kmax, and centroids are first selected randomly from samples. After initialization and evaluation of each solution based on the objective functions used, non-dominated solutions are obtained. To avoid getting stuck into the local optimal trap, Gaussian mutation is applied to non-dominated solutions. Then, Nash equilibrium is used to select the global optimal solution. In stage 4, the Jump method is employed to find the optimal number of clusters and return the result of the estimated number of clusters.
 
 ![arch](/figures/diagram7.jpg)
