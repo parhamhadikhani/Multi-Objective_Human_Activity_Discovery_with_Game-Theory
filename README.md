@@ -2,13 +2,12 @@
 
 Please cite our paper when you use this code in your research.
 ```
-@misc{...,
-      title={Human Activity Discovery with Automatic Multi-Objective Particle Swarm Optimization Clustering with Gaussian Mutation and Game Theory}}, 
-      author={Parham Hadikhani and Daphne Teck Ching Lai and Wee-Hong Ong},
-      year={2022},
-      eprint={...},
-      archivePrefix={..},
-      primaryClass={...}
+@article{hadikhani2023human,
+  title={Human activity discovery with automatic multi-objective particle swarm optimization clustering with gaussian mutation and game theory},
+  author={Hadikhani, Parham and Lai, Daphne Teck Ching and Ong, Wee-Hong},
+  journal={IEEE Transactions on Multimedia},
+  year={2023},
+  publisher={IEEE}
 }
 ```
 ## Introduction
