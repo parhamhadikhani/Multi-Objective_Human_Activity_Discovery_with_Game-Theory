@@ -16,7 +16,7 @@ This repository contains the implementation of our proposed method for [human ac
 
 ![arch](/figures/conceptual overview2.jpg)
 
-The workflow of the proposed method is as follows. First, keyframes are selected from the video sequence by computing kinetic energy. Then, features based on different aspects of skeleton including displacement, orientation, and statistical are extracted. Principal components are then chosen by applying PCA on the features. Next, overlapping time windows is used to segment a series of keyframes as activity samples. Hybrid PSO clustering with Gaussian mutation operator is used to discover the groups of activities. Eventually, K-means clustering is applied to the resultant cluster centers to refine the centroids.
+The workflow of the proposed method is as follows. In stage 1, keyframes and joints are and selected from input frames. In stage 2, features are extracted and normalized. Important features are selected b PCA and frames are segmented into the fix sized time overlapping windows. The HAD stage is executed for different values of k in the range of kmin to kmax, and centroids are first selected randomly from samples. After initialization and evaluation of each solution based on the objective functions used, non-dominated solutions are obtained. To avoid getting stuck into the local optimal trap, Gaussian mutation is applied to non-dominated solutions. Then, Nash equilibrium is used to select the global optimal solution. In stage 4, the Jump method is employed to find the optimal number of clusters and return the result of the estimated number of clusters.
 
 ![arch](/figures/diagram7.jpg)
 
@@ -25,10 +25,10 @@ The workflow of the proposed method is as follows. First, keyframes are selected
 To run the program and get the results, set the save_path address in MAIN.py to reach the Data and Results folder and then run MAIN.py.
 
 ### Results
-* The average accuracy for all subjects in (a) CAD-60, (b) UTKinect-Action3D, and (c) Florence3D (d) KARD, (e) MSR DailyActivity3D
+* The average accuracy for all subjects in different datasets
 
 ![arch](/figures/accuracy.png)
 
-* Comparison of confusion matrix of CAD-60 on subject 1.
+* Comparison of confusion matrix of different datasets.
 
 ![arch](/figures/CONF-MAT3.jpg)
